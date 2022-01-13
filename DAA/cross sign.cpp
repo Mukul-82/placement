@@ -1,1 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int n,k=1;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=n;j++)
+        {
+            if(j==i||j==n-i+1&&i!=j)
+            {
+                printf("%d",i);
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+
 
